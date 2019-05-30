@@ -1,0 +1,20 @@
+{
+  "name": "ng2mean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^0.2.10",
+    "body-parser": "^1.15.2",
+    "express": "^3.2.6",
+    "mongodb": "^2.2.5",
+    "socket.io": "^0.9.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

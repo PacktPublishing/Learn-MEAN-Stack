@@ -1,0 +1,22 @@
+<div class='table-responsive'>
+  <table class='table' *ngIf='events && events.length'>
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Code</th>
+        <th>Date</th>
+        <th>Fee</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let event of events'>
+        <td>{{event.name}}</td>
+        <td>{{event.code | lowercase}}</td>
+        <td>{{event.date}}</td>
+        <td>{{event.fee | currency:'USD':true:'1.2-2' }}</td>
+        <td>{{event.rating}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
